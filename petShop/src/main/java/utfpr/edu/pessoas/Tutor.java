@@ -11,5 +11,13 @@ public class Tutor extends Pessoas{
     public void setCodigoTutor(String codigoTutor) {
         this.codigoTutor = codigoTutor;
     }
+
+    public Tutor(String codigoTutor) {
+        this.codigoTutor = codigoTutor;
+    }
+    
+    public Tutor(){
+        
+    }
     
 }
