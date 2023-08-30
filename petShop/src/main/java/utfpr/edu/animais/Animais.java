@@ -81,9 +81,6 @@ public class Animais {
             peixe.setIdade(scan.nextInt());
             return peixe;
         }
-        return Animais;
+        
     }
-    
-    
-    
 }
