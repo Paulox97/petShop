@@ -44,12 +44,11 @@ public class Animais {
         animal = scan.nextInt();
         scan.nextLine();
         while (animal != 1 && animal != 2 && animal != 3){
-            System.out.println("O VALOR DGITADO NÃO É VALIDO, POR GENTILEZA PREENCHA NOVAMENTE: ");
+            System.out.println("O VALOR DIGITADO NÃO É VALIDO, POR GENTILEZA PREENCHA NOVAMENTE: ");
             System.out.println("1 - CACHORRO \n"
                 + "2 - GATO \n"
                 + "3 - PEIXE");
             animal = scan.nextInt();
-
         }
         if (animal == 1){
             Cachorro cachorro = new Cachorro();
