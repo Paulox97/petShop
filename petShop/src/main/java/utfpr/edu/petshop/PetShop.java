@@ -24,13 +24,13 @@ public class PetShop {
         System.out.println("POR GENTILEZA PREENCHA OS DADOS A BAIXO.");
         System.out.println("----------------------------------------");
         
-        while (continuar){        
-            Pessoas pessoas = new Pessoas();
-            pessoasCadastradas[indexPessoas] = pessoas.cadastroPessoas();
+        while (continuar){     
             
             Animais animais = new Animais();
             animaisCadastrados[index] = animais.cadastroAnimal();
             
+            Pessoas pessoas = new Pessoas();
+            pessoasCadastradas[indexPessoas] = pessoas.cadastroPessoas();         
 
             
             index++;
