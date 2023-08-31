@@ -56,8 +56,6 @@ public class Pessoas {
             tutor.setNome(scan.nextLine());
             System.out.println("INFORME O DOCUMENTO: ");
             tutor.setDocumento(scan.nextLine());
-            System.out.println("INFOME O ANIMAL DO TUTOR: ");
-            //tutor.setAnimal(scan.nextLine());
             return tutor;
         }
         else {
@@ -66,7 +64,6 @@ public class Pessoas {
             funcionario.setNome(scan.nextLine());
             System.out.println("INFORME O DOCUMENTO DO FUNCIONÁRIO: ");
             funcionario.setDocumento(scan.nextLine());
-            System.out.println("INFORME O ANIMAL DO FUNCIONÁRIO, CASO HOUVE: ");
             return funcionario;
         }
         
