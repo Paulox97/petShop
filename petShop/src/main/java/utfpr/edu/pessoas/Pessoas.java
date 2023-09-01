@@ -35,38 +35,15 @@ public class Pessoas {
         this.animal = animal;
     }
     
-    public Pessoas cadastroPessoas(){
-        int pessoa;
+    public Pessoas cadastroTutor(Animais animal){
         
-        System.out.println("QUAL O TIOPO DE PESSOA VAMOS CADASTRAR?");
-        System.out.println("1 - TUTOR \n"
-                + "2 - FUNCIONÁRIO");
-        pessoa = scan.nextInt();
-        scan.nextLine();
-        while (pessoa != 1 && pessoa != 2){
-            System.out.println("VALOR DIGITADO NÃO É VALIDO, POR GENTILEZA PREENCHA NOVAMENTE");
-            System.out.println("1 - TUTOR \n"
-                + "2 - FUNCIONÁRIO");
-            pessoa = scan.nextInt();
-            scan.nextLine();
-        }
-        if (pessoa == 1){
             Tutor tutor = new Tutor();
             System.out.println("INFORME O NOME DO TUTOR: ");
             tutor.setNome(scan.nextLine());
             System.out.println("INFORME O DOCUMENTO: ");
             tutor.setDocumento(scan.nextLine());
+            tutor.setAnimal(animal);
             return tutor;
-        }
-        else {
-            Funcionario funcionario = new Funcionario();
-            System.out.println("INFORME O NOME DO FUNCIONÁRIO: ");
-            funcionario.setNome(scan.nextLine());
-            System.out.println("INFORME O DOCUMENTO DO FUNCIONÁRIO: ");
-            funcionario.setDocumento(scan.nextLine());
-            return funcionario;
-        }
-        
     }
     
 }
